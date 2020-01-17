@@ -6,9 +6,10 @@ class Q2 {
         int small = nums.get(0);
         int seq = 0;
         for(int i = 0; i < nums.size(); i++){
-            if(nums.get(i)>small){
-            }else if (nums.get(i)<small){
+            
+            if (nums.get(i)<small){
                 seq = i;
+                small = nums.get(i);
             }
         }
         
